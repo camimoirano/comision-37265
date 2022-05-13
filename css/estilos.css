@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+ul{
+	list-style-type: none;
+}
+
+.encabezado{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(80% 20%);
+	background-color: black;
+	grid-template-areas:
+	"logo logo"
+	"titulo navegacion"
+	;
+}
+
+
+
+
+
+
+
+
+.logo{
+	grid-area: logo;
+	background-image: url('../assets/logo.png');
+	background-size: cover;
+	background-position: center;
+	height: 30vh;
+}
+
+.titulo{
+	grid-area: titulo;
+	background-color: lightgray;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Fira Sans', sans-serif;
+}
+
+.navegacion{
+	grid-area: navegacion;
+	background-color: darkgray;
+	color: white;
+	font-family: 'Anton', sans-serif;
+}
+
+.navegacion ul{
+	display: flex;
+	justify-content: space-around;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+.body{
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas:
+	"texto imagenes"
+	"historia historia";
+}
+
+.texto{
+	grid-area: texto;
+	margin: 35px;
+	margin-top: 90px;
+}
+.imagenes{
+	grid-area: imagenes;
+}
+
+.historia{
+	grid-area: historia;
+	margin: 35px;
+	margin-top: 90px;
+}
+
+.pregunta{
+	font-family: 'Anton', sans-serif;
+	color: grey;
+	font-size: 2rem;
+}
+
+.respuesta{
+	font-family: 'Fira Sans', sans-serif;
+	color: grey;
+	font-size: 1.5rem;
+	margin-top: 20px;
+}
+
+div .imagenes{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.imagenes img{
+	width: 16%;
+	margin: 10px;
+	margin-top: 110px;
+}
+
+.imagenes img:hover{
+	transform: scale(1.7);
+	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.cat{
+	font-family: 'Anton', sans-serif;
+	color: grey;
+	font-size: 2rem;
+	margin: 35px;
+	margin-top: 90px;
+	margin-left: 40px;
+}
+
+.subt{
+	font-family: 'Fira Sans', sans-serif;
+	color: grey;
+	font-size: 1.5rem;
+	margin-left: 41px;
+}
+
+.subtt{
+	font-family: 'Fira Sans', sans-serif;
+	color: grey;
+	font-size: 1.5rem;
+	margin-left: 41px;
+	margin-top: 35px;
+}
+
+div .img{
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	align-content: flex-start ;
+}
+
+.img img{
+	width: 15%;
+	margin: 10px;
+	margin-left: 40px;
+}
+div .imgg{
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	align-content: spa;
+}
+
+.imgg img{
+	width:  15%;
+	margin: 10px;
+	margin-left: 40px;
+}
+
+.img img:hover{
+	transform: scale(1.4);
+	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.imgg img:hover{
+	transform: scale(1.4);
+	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+#footer{
+	background-color: darkgray;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-areas:
+	"insta none num" 
+	"fb none mail"
+}
+
+.insta{
+	grid-area: insta;
+	background-image: url('../assets/insta.png') ;
+	background-position: center;
+	height: 40px;
+	width: 40px;
+	background-size: cover;
+	margin: 20px  0px 4px 40px;
+}
+
+.fb{
+	grid-area: fb;
+	background-image: url('../assets/fb.png') ;
+	background-position: center;
+	height: 40px;
+	width: 40px;
+	background-size: cover;
+	margin: 4px  0px 20px 40px;
+}
+
+.num{
+	font-family: 'Fira Sans', sans-serif;
+	grid-area: num;
+	color: black;
+	display: flex;
+	justify-content: flex-start;
+	align-self: flex-end;
+	font-weight: bolder;
+	margin-left: 100px;
+}
+
+.mail{
+	margin-left: 100px;
+	font-family: 'Fira Sans', sans-serif;
+	grid-area: mail;
+	color: black;
+	font-weight: bolder;
+
+}
+
+@media(min width: 576px)and(max-width: 992px){
+	.logo{
+		height: 20vh;
+	}
+	.body{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		grid-template-areas: 
+		"texto texto texto"
+		"imagenes imagenes imagenes"
+		"historia historia historia";
+	}
+	.texto{
+		margin-top: 20px;
+	}
+	.historia{
+		margin-top: 20px;
+	}
+	.pregunta{
+		font-size: 1rem;
+	}
+}
