@@ -22,12 +22,6 @@ ul{
 }
 
 
-
-
-
-
-
-
 .logo{
 	grid-area: logo;
 	background-image: url('../assets/logo.png');
@@ -53,6 +47,11 @@ ul{
 	font-family: 'Anton', sans-serif;
 }
 
+.navegacion:hover{
+	background-color: black;
+	color: white;
+}
+
 .navegacion ul{
 	display: flex;
 	justify-content: space-around;
@@ -70,6 +69,7 @@ a{
 	grid-template-areas:
 	"texto imagenes"
 	"historia historia";
+	background: linear-gradient(to left,white, lightpink);
 }
 
 .texto{
